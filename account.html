@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7faf5" />
+    <title>Family account | LearnMore Academy</title>
+    <link rel="stylesheet" href="accounts.css" />
+  </head>
+  <body>
+    <main class="account-shell">
+      <header class="account-header">
+        <a class="brand" href="index.html"><span class="brand-mark">L<span>+</span></span><span>LearnMore <b>Academy</b></span></a>
+        <button class="button button-secondary" id="sign-out" type="button">Sign out</button>
+      </header>
+      <section class="account-card">
+        <p class="eyebrow">PARENT & GUARDIAN AREA</p>
+        <h1 id="welcome">Your family account</h1>
+        <p class="intro" id="account-email"></p>
+        <div class="notice notice-info" id="account-notice" role="status" aria-live="polite" hidden></div>
+
+        <section class="children-section" aria-labelledby="children-title">
+          <div class="section-title-row"><div><p class="eyebrow">LEARNER PROFILES</p><h2 id="children-title">Your children <span id="child-count" class="count-pill">0 / 2</span></h2></div></div>
+          <p class="section-copy">Add up to two child profiles. Use a first name or nickname only; don’t add a surname, birth date, school, or contact details.</p>
+          <div id="children-list" class="children-list" aria-live="polite"></div>
+          <div id="empty-state" class="empty-state">No learner profiles yet. Add a child to get started.</div>
+          <form id="child-form" class="child-form">
+            <h3>Add a learner</h3>
+            <div class="form-row">
+              <label>First name or nickname<input name="firstName" type="text" required maxlength="30" autocomplete="off" /></label>
+              <label>Learning level<select name="grade" required><option value="">Choose a level</option><option>ECD</option><option>Grade 1</option><option>Grade 2</option><option>Grade 3</option><option>Grade 4</option><option>Grade 5</option><option>Grade 6</option><option>Grade 7</option></select></label>
+              <label>Learning language<select name="language" required><option>English</option><option>Shona</option></select></label>
+            </div>
+            <button class="button button-primary" type="submit">Add child profile</button>
+          </form>
+        </section>
+
+        <section class="account-info">
+          <h2>Account details</h2>
+          <form id="profile-form" class="profile-form">
+            <label>Parent or guardian name<input name="guardianName" type="text" required maxlength="80" /></label>
+            <button class="button button-secondary" type="submit">Save name</button>
+          </form>
+          <p class="privacy-note">This is an early account foundation. Learning progress, subscriptions, payment proof, and shop orders are not connected yet.</p>
+        </section>
+        <a class="back-link" href="index.html">← Back to LearnMore Academy</a>
+      </section>
+      <footer>LearnMore Academy · Zimbabwe · English & Shona</footer>
+    </main>
+    <script type="module" src="account.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7faf5" />
+    <title>Parent sign in | LearnMore Academy</title>
+    <link rel="stylesheet" href="accounts.css" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <a class="brand" href="index.html"><span class="brand-mark">L<span>+</span></span><span>LearnMore <b>Academy</b></span></a>
+      <section class="auth-card" aria-labelledby="page-title">
+        <p class="eyebrow">PARENT & GUARDIAN AREA</p>
+        <h1 id="page-title">Your family’s learning space</h1>
+        <p class="intro">Sign in or create an adult account to manage your children’s learning.</p>
+
+        <div class="notice notice-info" id="setup-notice" role="status">
+          Account setup is not connected yet. Follow <a href="AUTH_SETUP.md">the setup guide</a> to connect a Supabase project. Don’t enter real account details until setup is complete.
+        </div>
+        <div class="notice" id="message" role="status" aria-live="polite" hidden></div>
+
+        <div class="tabs" role="tablist" aria-label="Account options">
+          <button type="button" class="tab active" role="tab" aria-selected="true" aria-controls="login-panel" id="login-tab">Sign in</button>
+          <button type="button" class="tab" role="tab" aria-selected="false" aria-controls="signup-panel" id="signup-tab">Create parent account</button>
+        </div>
+
+        <form id="login-panel" class="account-form" aria-labelledby="login-tab">
+          <label>Email address<input name="email" type="email" autocomplete="email" required maxlength="254" /></label>
+          <label>Password<input name="password" type="password" autocomplete="current-password" required minlength="10" /></label>
+          <button class="button button-primary" type="submit">Sign in</button>
+        </form>
+
+        <form id="signup-panel" class="account-form" aria-labelledby="signup-tab" hidden>
+          <label>Parent or guardian name<input name="guardianName" type="text" autocomplete="name" required maxlength="80" /></label>
+          <label>Email address<input name="email" type="email" autocomplete="email" required maxlength="254" /></label>
+          <label>Create password<input name="password" type="password" autocomplete="new-password" required minlength="10" aria-describedby="password-help" /></label>
+          <small id="password-help" class="field-help">Use at least 10 characters. Never use a child’s name or school as a password.</small>
+          <label class="check-row"><input name="adultConfirmation" type="checkbox" required /><span>I am the parent or legal guardian creating this account.</span></label>
+          <button class="button button-primary" type="submit">Create account</button>
+        </form>
+
+        <p class="privacy-note">Adult-managed accounts only. Add only a child’s first name and grade—no birth date, school, or contact details are needed for this prototype.</p>
+        <a class="back-link" href="index.html">← Back to LearnMore Academy</a>
+      </section>
+      <footer>LearnMore Academy · Zimbabwe · English & Shona</footer>
+    </main>
+    <script type="module" src="auth.js"></script>
+  </body>
+</html>
