@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LearnMore Academy | Parent Dashboard</title>
+    <meta name="description" content="Parent dashboard for LearnMore Academy families." />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body class="dashboard-body">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <a class="brand" href="index.html" aria-label="LearnMore Academy home">
+          <span class="brand-mark">L<span>+</span></span>
+          <span>LearnMore <b>Academy</b></span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Parent dashboard navigation">
+        <a class="active" href="dashboard.html">Overview</a>
+        <a href="#children">Children</a>
+        <a href="#progress">Progress</a>
+        <a href="#payments">Payments</a>
+        <a href="#shop">Shop</a>
+        <a href="#settings">Settings</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <p class="eyebrow">Family status</p>
+        <h3>2 children active</h3>
+        <small>1 monthly plan / 1 term plan</small>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Parent dashboard</p>
+          <h1>Welcome back, Mai Moyo</h1>
+        </div>
+        <div class="topbar-actions">
+          <button class="button button-soft" type="button">Support</button>
+          <button class="button button-primary" type="button">Add child</button>
+        </div>
+      </header>
+
+      <section class="summary-grid" aria-label="Family summary">
+        <article class="summary-card accent-green">
+          <div class="card-label">Active plans</div>
+          <div class="card-metric">2</div>
+          <small>Monthly and term plans in use</small>
+        </article>
+        <article class="summary-card accent-yellow">
+          <div class="card-label">Average quiz score</div>
+          <div class="card-metric">84%</div>
+          <small>Across both children</small>
+        </article>
+        <article class="summary-card accent-purple">
+          <div class="card-label">Shop orders</div>
+          <div class="card-metric">3</div>
+          <small>1 awaiting payment review</small>
+        </article>
+        <article class="summary-card accent-orange">
+          <div class="card-label">Next renewal</div>
+          <div class="card-metric">12 Jun</div>
+          <small>Term plan expires in 14 days</small>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <div class="panel panel-wide" id="children">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Children</p>
+              <h2>Your family</h2>
+            </div>
+            <button class="button button-ghost" type="button">Manage children</button>
+          </div>
+
+          <div class="child-list">
+            <article class="child-card">
+              <div class="avatar avatar-green">A</div>
+              <div class="child-main">
+                <h3>Anesu Moyo</h3>
+                <p>Grade 3 · English & Shona</p>
+              </div>
+              <div class="child-meta">
+                <span class="badge badge-success">Course active</span>
+                <strong>80% progress</strong>
+              </div>
+            </article>
+
+            <article class="child-card">
+              <div class="avatar avatar-blue">T</div>
+              <div class="child-main">
+                <h3>Tariro Moyo</h3>
+                <p>Grade 1 · Reading + numeracy</p>
+              </div>
+              <div class="child-meta">
+                <span class="badge badge-warn">Review due</span>
+                <strong>64% progress</strong>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel" id="progress">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Progress</p>
+              <h2>Learning</h2>
+            </div>
+          </div>
+
+          <div class="progress-block">
+            <div class="progress-row">
+              <span>Reading</span>
+              <strong>86%</strong>
+            </div>
+            <div class="progress-bar"><span style="width:86%"></span></div>
+          </div>
+
+          <div class="progress-block">
+            <div class="progress-row">
+              <span>Numeracy</span>
+              <strong>72%</strong>
+            </div>
+            <div class="progress-bar"><span style="width:72%"></span></div>
+          </div>
+
+          <div class="progress-block">
+            <div class="progress-row">
+              <span>Science</span>
+              <strong>93%</strong>
+            </div>
+            <div class="progress-bar"><span style="width:93%"></span></div>
+          </div>
+        </div>
+
+        <div class="panel" id="payments">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Payments</p>
+              <h2>Subscriptions</h2>
+            </div>
+          </div>
+
+          <div class="payment-list">
+            <div class="payment-item">
+              <div>
+                <strong>Monthly plan</strong>
+                <small>Awaiting approval</small>
+              </div>
+              <span class="status status-pending">Pending</span>
+            </div>
+            <div class="payment-item">
+              <div>
+                <strong>Term plan</strong>
+                <small>Approved · active</small>
+              </div>
+              <span class="status status-approved">Approved</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="shop">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Shop</p>
+              <h2>Orders</h2>
+            </div>
+          </div>
+
+          <div class="order-list">
+            <div class="order-item">
+              <div>
+                <strong>Alphabet chart pack</strong>
+                <small>Mutare delivery</small>
+              </div>
+              <span class="status status-paid">Paid</span>
+            </div>
+            <div class="order-item">
+              <div>
+                <strong>Reading workbook</strong>
+                <small>Awaiting payment proof</small>
+              </div>
+              <span class="status status-pending">Pending</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-wide" id="settings">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Admin</p>
+              <h2>Latest updates</h2>
+            </div>
+          </div>
+
+          <div class="updates-list">
+            <article class="update-item">
+              <span class="update-dot"></span>
+              <div>
+                <strong>New science lesson uploaded</strong>
+                <small>Today · Grade 3</small>
+              </div>
+            </article>
+            <article class="update-item">
+              <span class="update-dot"></span>
+              <div>
+                <strong>Quiz results shared with parent</strong>
+                <small>Yesterday · Anesu</small>
+              </div>
+            </article>
+            <article class="update-item">
+              <span class="update-dot"></span>
+              <div>
+                <strong>Shop order confirmed</strong>
+                <small>2 days ago · Mutare</small>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>
