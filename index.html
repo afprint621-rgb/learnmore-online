@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8ec">
+  <meta name="description" content="LearnMore Academy helps children learn with videos, games, quizzes and learning materials." />
+  <title>LearnMore Academy — Learn, play, grow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="LearnMore Academy home"><span class="brand-mark">L<span>+</span></span><span>LearnMore <b>Academy</b></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#learn">Learn</a><a href="#games">Games</a><a href="#shop">Shop</a>
+    </nav>
+    <div class="header-actions">
+      <label class="language-picker"><span class="visually-hidden">Language</span><select id="language"><option value="en">English</option><option value="sn">Shona</option></select></label>
+      <a class="button button-small button-outline" href="#parent">Parent area</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero page-width">
+      <div class="hero-copy">
+        <p class="eyebrow" data-en="A brighter way to learn" data-sn="Nzira inofadza yekudzidza">A brighter way to learn</p>
+        <h1 data-en="Big ideas. Happy learning." data-sn="Mazano makuru. Kudzidza kunofadza.">Big ideas.<br><span>Happy learning.</span></h1>
+        <p class="hero-description" data-en="A safe, joyful learning space for Zimbabwean children from ECD to Grade 7." data-sn="Nzvimbo yakachengeteka uye inofadza yekudzidza yevana vekuZimbabwe kubva kuECD kusvika kuGrade 7.">A safe, joyful learning space for Zimbabwean children from ECD to Grade 7.</p>
+        <div class="hero-buttons"><a class="button button-primary" href="#learn" data-en="Explore free samples" data-sn="Ona zvidzidzo zvemahara">Explore free samples</a><a class="text-link" href="#how-it-works" data-en="How it works →" data-sn="Mashandiro ayo →">How it works →</a></div>
+        <div class="trust-note"><span class="trust-icon">✓</span><span data-en="Made for curious minds, with parents in control" data-sn="Yakagadzirirwa vana vanoda kuziva, vabereki vachitarisira">Made for curious minds, with parents in control</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of children learning">
+        <div class="sun"></div><div class="float-star star-one">✦</div><div class="float-star star-two">✦</div>
+        <div class="book book-back"></div><div class="book book-front"><span>ABC</span><i>▶</i></div>
+        <div class="plant"><span></span><span></span><b></b></div>
+        <div class="hero-sticker">Learn<br><strong>every day!</strong></div>
+      </div>
+    </section>
+
+    <section class="grade-strip page-width" aria-label="Choose a learning level">
+      <div><p class="eyebrow" data-en="YOUR LEARNING JOURNEY" data-sn="RWENDO RWAKO RWEKUDZIDZA">YOUR LEARNING JOURNEY</p><h2 data-en="Choose your level" data-sn="Sarudza giredhi rako">Choose your level</h2></div>
+      <div class="grade-list" id="grade-list"></div>
+    </section>
+
+    <section class="section page-width" id="learn">
+      <div class="section-heading"><div><p class="eyebrow" data-en="WATCH & DISCOVER" data-sn="ONA UYE DZIDZA">WATCH & DISCOVER</p><h2 data-en="Learning can be an adventure" data-sn="Kudzidza rwendo runonakidza">Learning can be an adventure</h2></div><a class="text-link" href="#how-it-works" data-en="See how it works →" data-sn="Ona mashandiro ayo →">See how it works →</a></div>
+      <div class="feature-grid">
+        <article class="feature-card video-card"><div class="card-illustration video-illustration"><span class="play-button">▶</span><span class="illustration-label">SCIENCE</span></div><div class="card-body"><span class="tag tag-free" data-en="FREE SAMPLE" data-sn="CHEMAHARA">FREE SAMPLE</span><h3 data-en="Discover the world around us" data-sn="Ziva nyika yakatipoteredza">Discover the world around us</h3><p data-en="Short, friendly lessons made for young learners." data-sn="Zvidzidzo zvipfupi, zvinofadza zvakagadzirirwa vana.">Short, friendly lessons made for young learners.</p><a class="card-link" href="#parent" data-en="Explore lessons →" data-sn="Ona zvidzidzo →">Explore lessons →</a></div></article>
+        <article class="feature-card game-card" id="games"><div class="card-illustration game-illustration"><span class="game-sun">☀</span><span class="game-cloud">● ● ●</span><span class="game-hill"></span><span class="game-pencil">✎</span></div><div class="card-body"><span class="tag tag-game" data-en="LEARN BY PLAYING" data-sn="DZIDZA UCHITAMBA">LEARN BY PLAYING</span><h3 data-en="Play, practise, get better" data-sn="Tamba, dzidzira, vandudza">Play, practise, get better</h3><p data-en="Games that turn practice into play." data-sn="Mitambo inoshandura kudzidzira kuita kunakidzwa.">Games that turn practice into play.</p><a class="card-link" href="#parent" data-en="Explore games →" data-sn="Ona mitambo →">Explore games →</a></div></article>
+        <article class="feature-card quiz-card"><div class="card-illustration quiz-illustration"><span class="quiz-paper"><b>?</b><i>✓</i><i>✓</i><i>○</i></span><span class="quiz-spark">✦</span></div><div class="card-body"><span class="tag tag-quiz" data-en="YOUR PROGRESS" data-sn="KUFAMBA MBERI KWAKO">YOUR PROGRESS</span><h3 data-en="Quizzes that cheer you on" data-sn="Mibvunzo inokukurudzira">Quizzes that cheer you on</h3><p data-en="Try again, learn from mistakes, and celebrate progress." data-sn="Edza zvakare, dzidza, uye pemberera kufambira mberi.">Try again, learn from mistakes, and celebrate progress.</p><a class="card-link" href="#parent" data-en="See a sample quiz →" data-sn="Ona muenzaniso wemibvunzo →">See a sample quiz →</a></div></article>
+      </div>
+    </section>
+
+    <section class="shop-band" id="shop"><div class="page-width shop-inner"><div class="shop-art" aria-hidden="true"><span class="shop-book">A<br><small>📖</small></span><span class="shop-chart">1 2 3<br>● ▲ ■</span><span class="shop-pencil">✎</span></div><div class="shop-copy"><p class="eyebrow" data-en="THE LEARNING SHOP" data-sn="CHITORO CHEZVIDZIDZO">THE LEARNING SHOP</p><h2 data-en="Helpful learning things, delivered in Mutare" data-sn="Zvokudzidza zvinobatsira, zvinounzwa muMutare">Helpful learning things,<br>delivered in Mutare</h2><p data-en="Browse books, charts and more. A parent or guardian places and manages every order." data-sn="Ongorora mabhuku, machati nezvimwe. Mubereki ndiye anoisa nekutarisa odha.">Browse books, charts and more. A parent or guardian places and manages every order.</p><a href="#parent" class="button button-primary" data-en="Visit the shop" data-sn="Shanyira chitoro">Visit the shop</a></div></div></section>
+
+    <section class="how-section page-width" id="how-it-works"><div class="section-heading"><div><p class="eyebrow" data-en="SIMPLE FOR FAMILIES" data-sn="ZVIRI NYORE KUMHURI">SIMPLE FOR FAMILIES</p><h2 data-en="A little progress every day" data-sn="Kufambira mberi zvishoma zuva nezuva">A little progress every day</h2></div></div><div class="steps"><article><span class="step-number">01</span><h3 data-en="A parent sets things up" data-sn="Mubereki anogadzira account">A parent sets things up</h3><p data-en="One parent account can manage up to two children." data-sn="Account yemubereki inogona kutarisira vana vanosvika vaviri.">One parent account can manage up to two children.</p></article><article><span class="step-number">02</span><h3 data-en="Choose a path to learn" data-sn="Sarudza nzira yekudzidza">Choose a path to learn</h3><p data-en="Explore free samples, or request a monthly or 120-day term plan." data-sn="Ona zvidzidzo zvemahara kana kukumbira chirongwa chemwedzi kana chemazuva 120.">Explore free samples, or request a monthly or 120-day term plan.</p></article><article><span class="step-number">03</span><h3 data-en="Learn, practise, celebrate" data-sn="Dzidza, dzidzira, pemberera">Learn, practise, celebrate</h3><p data-en="Build skills with lessons, games and encouraging quizzes." data-sn="Vaka hunyanzvi nezvidzidzo, mitambo nemibvunzo inokurudzira.">Build skills with lessons, games and encouraging quizzes.</p></article></div></section>
+
+    <section class="parent-panel page-width" id="parent"><div class="parent-panel-inner"><div><p class="eyebrow" data-en="FOR PARENTS & GUARDIANS" data-sn="KUVABEREKI NEVANOCHENGETA VANA">FOR PARENTS & GUARDIANS</p><h2 data-en="You’re part of every step." data-sn="Muri pamwe parwendo rwose.">You’re part of every step.</h2><p data-en="Manage your family’s learning plan and shop orders in one place." data-sn="Tarisirai chirongwa chekudzidza chemhuri nemaodha echitoro munzvimbo imwe.">Manage your family’s learning plan and shop orders in one place.</p></div><a class="button button-light" href="mailto:hello@learnmoreacademy.online" data-en="Get in touch" data-sn="Taura nesu">Get in touch</a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="brand footer-brand" href="#home"><span class="brand-mark">L<span>+</span></span><span>LearnMore <b>Academy</b></span></a><p data-en="Learn, play, grow — together." data-sn="Dzidza, tamba, kura — pamwe chete.">Learn, play, grow — together.</p></div><div class="footer-bottom"><span>© <span id="year"></span> LearnMore Academy</span><span data-en="For families in Zimbabwe · Mutare shop delivery" data-sn="Kumhuri dzemuZimbabwe · Kuendeswa kwezvinhu muMutare">For families in Zimbabwe · Mutare shop delivery</span><span>English · Shona</span></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
